@@ -1,0 +1,34 @@
+{% load i18n %}
+{% load css_js %}
+<script type="text/javascript">
+    // URL para actualizar combos anidados
+    var URL_ACTUALIZAR_SELECT = "{% url 'actualizar_combo' %}";
+</script>
+
+<script type="text/javascript">
+    {% jquery_3_1_1_min_js %}
+    {% bootstrap_min_js %}
+    {% select2_full_min_js %}
+    {% jquery_mask_min_js %}
+    {% ajax_request_js %}
+    {% jquery_dataTables_min_js %}
+    {% dataTables_bootstrap_min_js %}
+    {% dataTables_responsive_min_js %}
+    {% dataTables_buttons_min_js %}
+    {% dataTables_buttons_min_js %}
+    {% buttons_html5_min_js %}
+    {% buttons_flash_min_js %}
+    {% buttons_print_min_js %}
+    {% buttons_bootstrap_min_js %}
+    {% jszip_min_js %}
+    {% pdfmake_min_js %}
+    {% vfs_fonts_js %}
+
+    $(document).ready(function(){
+        //muestra los mensajes centrados
+        $('[data-toggle="tooltip"]').tooltip();
+
+        //para agregar el select2 en los respectivos campos de tipo select
+        $(".select2").select2();
+    });
+</script>

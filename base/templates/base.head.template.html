@@ -1,0 +1,20 @@
+{% load i18n %}
+{% load css_js %}
+<head>
+	<meta charset="UTF-8">
+	<title>{% trans 'Fundacite-Mérida' %}</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta name="description" content="{% trans 'Automatización de Datos de Fundacite-Mérida' %}">
+    <meta name="author" content="Jairo Hernández (jairoht10 at gmail.com)">
+    {% block extra_head %}
+        <style type="text/css" >
+            {% bootstrap_min_css %}
+            {% select2_css %}
+            {% ionicons_min_css %}
+            {% buttons_dataTables_min_css %}
+            {% dataTables_bootstrap_min_css %}
+            {% responsive_bootstrap_min_css %}
+            {% buttons_bootstrap_min_css %}
+        </style>
+    {% endblock %}
+</head>
